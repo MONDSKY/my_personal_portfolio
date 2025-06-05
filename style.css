@@ -126,3 +126,41 @@ button {
     box-shadow: 0 0 5px #00ffff, 0 0 10px #00ffff, 0 0 15px #00ffff;
   }
 }
+
+/* 🔹 Video Background */
+#bg-video {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+  opacity: 0.3;
+  filter: blur(2px);
+}
+
+/* 🔹 Content Over Video */
+.about-section {
+  max-width: 800px;
+  margin: 100px auto;
+  padding: 20px;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+
+.about-card {
+  background-color: rgba(0, 0, 0, 0.6);
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0,255,255,0.2);
+  animation: float 4s ease-in-out infinite, glow 3s ease-in-out infinite;
+}
+
+.about-card p {
+  line-height: 1.6;
+  font-size: 1.1em;
+  margin-bottom: 1em;
+  color: #ffffff;
+}
