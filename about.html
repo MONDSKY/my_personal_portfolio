@@ -6,15 +6,30 @@
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
+  <!-- 🔹 Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="your-video.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔹 Navigation -->
   <nav>
     <a href="index.html">Home</a>
     <a href="about.html">About</a>
     <a href="projects.html">Projects</a>
     <a href="contact.html">Contact</a>
   </nav>
-  <section class="content">
+
+  <!-- 🔹 Content -->
+  <section class="content about-section">
     <h2>About Me</h2>
-    <p>This is the about section. Tell your story here!</p>
+    <div class="about-card">
+      <p>Hello! I'm <strong>[Your Name]</strong>, a passionate and creative web developer who loves crafting beautiful, interactive, and functional websites.</p>
+      <p>I specialize in front-end development using HTML, CSS, and JavaScript, and I enjoy working with modern frameworks like React and backend tools like Node.js + MySQL.</p>
+      <p>When I'm not coding, you'll find me exploring new tech, designing interfaces, or enjoying my hobbies like sleeping, gaming, or hiking.</p>
+      <p>My goal is to continuously learn and grow as a developer while building meaningful and impactful projects.</p>
+      <p><em>"Code is not just logic, it's also art."</em></p>
+    </div>
   </section>
 </body>
 </html>
