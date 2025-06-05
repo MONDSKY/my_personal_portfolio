@@ -4,6 +4,61 @@
   <meta charset="UTF-8" />
   <title>Home - My Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100%;
+      font-family: sans-serif;
+    }
+
+    #bg-video {
+      position: fixed;
+      right: 0;
+      bottom: 0;
+      min-width: 100%;
+      min-height: 100%;
+      z-index: -1;
+    }
+
+    .overlay {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      height: 100vh;
+      padding: 40px;
+      background-color: rgba(0, 0, 0, 0.5);
+      color: white;
+    }
+
+    nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+    }
+
+    nav a {
+      margin-right: 20px;
+      color: white;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    header {
+      max-width: 50%;
+    }
+
+    .highlight {
+      color: #00ffd5;
+    }
+
+    .profile-pic {
+      max-width: 300px;
+      border-radius: 15px;
+      box-shadow: 0 0 20px rgba(0,0,0,0.4);
+    }
+  </style>
 </head>
 <body>
   <video autoplay muted loop id="bg-video">
@@ -11,16 +66,21 @@
     Your browser does not support HTML5 video.
   </video>
   <div class="overlay">
-    <nav>
-      <a href="index.html">Home</a>
-      <a href="about.html">About</a>
-      <a href="projects.html">Projects</a>
-      <a href="contact.html">Contact</a>
-    </nav>
-    <header>
-      <h1>Hey, I'm <span class="highlight">Reymond Servino</span></h1>
-      <p>I’m a <span class="highlight">Developer</span></p>
-    </header>
+    <div>
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <header>
+        <h1>Hey, I'm <span class="highlight">Reymond Servino</span></h1>
+        <p>I’m a <span class="highlight">Developer</span></p>
+      </header>
+    </div>
+    <div>
+      <img src="your-photo.jpg" alt="Reymond Servino" class="profile-pic" />
+    </div>
   </div>
 </body>
 </html>
