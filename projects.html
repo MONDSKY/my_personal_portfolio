@@ -2,17 +2,32 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>My Projects</title>
-  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="projects.css" />
 </head>
 <body>
-  <nav>
-    <a href="index.html">Home</a>
-    <a href="about.html">About</a>
-    <a href="projects.html">Projects</a>
-    <a href="contact.html">Contact</a>
+  <!-- 🔹 Background Video -->
+  <video autoplay muted loop id="bg-video">
+    <source src="damdamin.mp4" type="video/mp4" />
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- 🔹 Overlay -->
+  <div class="overlay"></div>
+
+  <!-- 🔹 Navigation -->
+  <nav class="navbar">
+    <div class="nav-logo">Reymond</div>
+    <div class="nav-links">
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="projects.html" class="active">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
   </nav>
 
+  <!-- 🔹 Content -->
   <section class="content">
     <h2>My Projects</h2>
     <div class="projects-grid">
